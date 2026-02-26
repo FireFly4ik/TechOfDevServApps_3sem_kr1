@@ -10,5 +10,5 @@ class Feedback(BaseModel):
         s = s.lower()
         for i in ('кринж', 'рофл', 'вайб'):
             if re.search(rf'\b{i}[а-яё]*\b', s):
-                raise ValueError('мы не кринжуем, не вайбим и не рофлим')
+                raise ValueError('так нини!')
         return s
